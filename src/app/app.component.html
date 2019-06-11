@@ -3,8 +3,33 @@
   <h1>
     Welcome to {{ title }}!
   </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
 </div>
-<h2>Here are some links to help you start: </h2>
-<div uk-alert>hey</div>
+<div class="uk-card">
+  <div class="uk-card-header">
+      <h3 class="uk-card-title"></h3>
+  </div>
+  <div class="uk-card-body"></div>
+  <div class="uk-card-footer"></div>
+</div>
+PREVIEW
+MARKUP
+<div class="uk-card uk-card-default uk-width-1-2@m">
+  <div class="uk-card-header">
+      <div class="uk-grid-small uk-flex-middle" uk-grid>
+          <div class="uk-width-auto">
+              <img class="uk-border-circle" width="40" height="40" src="assets/imag.jpg">
+          </div>
+          <div class="uk-width-expand">
+              <h3 class="uk-card-title uk-margin-remove-bottom">Title</h3>
+              <p class="uk-text-meta uk-margin-remove-top"><time datetime="2016-04-01T19:00">April 01, 2016</time></p>
+          </div>
+      </div>
+  </div>
+  <div class="uk-card-body">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+  </div>
+  <div class="uk-card-footer">
+      <a href="#" class="uk-button uk-button-text">Read more</a>
+  </div>
+</div>
 <router-outlet></router-outlet>
